@@ -42,7 +42,9 @@ The easiest way to edit settings in VSCode for a specific software projects is b
 4. To help VSCode select the correct interpreter in future when it opens the workspace for your project, set a default interpreter by adding the following to the project's `.vscode/settings.json` file:
 
 ```json
-"python.defaultInterpreterPath": "path/to/python/from/step/1"
+{
+    "python.defaultInterpreterPath": "path/to/python/from/step/1"
+}
 ```
 
 📝 [Relevant VSCode Docs](https://code.visualstudio.com/docs/python/environments)
@@ -53,19 +55,23 @@ The easiest way to edit settings in VSCode for a specific software projects is b
 2. Add the following to your project's `.vscode/settings.json` file:
 
     ```json
-    "editor.formatOnSave": true,
-    "editor.formatOnType": true,
-    "python.formatting.provider": "black",
-    "python.formatting.blackPath": "path/to/black/from/step/1",
+    {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "python.formatting.provider": "black",
+        "python.formatting.blackPath": "path/to/black/from/step/1"
+    }
     ```
 
 3. If you want, you can add a vertical ruler to your editor at projects maximum line length - I find this helps quite a bit when writing and re-sizing windows correctly (change the values to your faves):
 
     ```json
-    "editor.rulers": [79],
-    "workbench.colorCustomizations": {
-        "editorRuler.foreground": "your-fave-hex-value"
-    },
+    {
+        "editor.rulers": [79],
+        "workbench.colorCustomizations": {
+            "editorRuler.foreground": "your-fave-hex-value"
+        }
+    }
     ```
 
 📝 [Relevant VSCode Docs](https://code.visualstudio.com/docs/python/editing)
@@ -76,9 +82,11 @@ The easiest way to edit settings in VSCode for a specific software projects is b
 2. Add the following to your project's `.vscode/settings.json` file:
 
     ```json
-    "python.linting.enabled": true,
-    "python.linting.flake8Enabled": true,
-    "python.linting.flake8Path": "path/to/flake8/from/step/1",
+    {
+        "python.linting.enabled": true,
+        "python.linting.flake8Enabled": true,
+        "python.linting.flake8Path": "path/to/flake8/from/step/1"
+    }
     ```
 
 📝 [Relevant VSCode Docs](https://code.visualstudio.com/docs/python/linting)
@@ -89,10 +97,12 @@ The easiest way to edit settings in VSCode for a specific software projects is b
 2. Add the following to your project's `.vscode/settings.json` file:
 
     ```json
-    "python.sortImports.path": "path/to/isort/from/step/1",
-    "[python]": {
-        "editor.codeActionsOnSave": {
-            "source.organizeImports": true
+    {
+        "python.sortImports.path": "path/to/isort/from/step/1",
+        "[python]": {
+            "editor.codeActionsOnSave": {
+                "source.organizeImports": true
+            }
         }
     }
     ```
@@ -105,8 +115,10 @@ The easiest way to edit settings in VSCode for a specific software projects is b
 2. Add the following to your project's `.vscode/settings.json` file:
 
     ```json
-    "python.linting.mypyEnabled": true,
-    "python.linting.mypyPath": "path/to/mypy/from/step/1",
+    {
+        "python.linting.mypyEnabled": true,
+        "python.linting.mypyPath": "path/to/mypy/from/step/1"
+    }
     ```
 
 📝 [Relevant VSCode Docs](https://code.visualstudio.com/docs/python/linting#_mypy)
