@@ -1,0 +1,56 @@
+baseURL = "/"
+languageCode = "en-us"
+theme = "hugo-winston-theme"
+themesDir = "themes"
+title = "Ben Watson"
+paginate = 3
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+pygmentsUseClasses = true
+
+[module]
+[module.hugoVersion]
+extended = true
+min = "0.55.0"
+
+[params]
+showAuthorOnHomepage = true
+showAuthorOnPosts = false
+showIntroContentOnHomepage = true
+showPostsOnHomepage = false
+usePaginationOnHomepage = false
+limitPostsOnHomepage = 3                                                                      # only used if usePaginationOnHomepage is false
+sortPostsByDateOldestFirst = false
+addDot = true
+addFrame = true
+highlightColor = '#cb4b16'
+baseColor = "#fdf6e3"
+baseOffsetColor = "#ffffff"
+headingColor = "#657b83"
+textColor = "#657b83"
+dotColor = "#cb4b16"
+enableGoogleFonts = true
+googleFontsUrl = "https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+fontFamilyHeading = "Roboto"
+fontFamilyParagraph = "Roboto"
+fontFamilyMonospace = "Roboto Mono"
+
+# markdown config settings https://gohugo.io/getting-started/configuration-markup/#goldmark
+[markup]
+[markup.goldmark]
+[markup.goldmark.renderer]
+hardWraps = false
+unsafe = true
+xhtml = false
+
+[menu]
+[[menu.main]]
+identifier = 'home'
+name = 'Home'
+url = '/'
+weight = 1
+[[menu.main]]
+name = "Projects"
+identifier = "projects"
+weight = 3
+url = "/projects/"
