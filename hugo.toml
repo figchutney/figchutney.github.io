@@ -54,3 +54,8 @@ name = "Projects"
 identifier = "projects"
 weight = 3
 url = "/projects/"
+[[menu.main]]
+name = "Posts"
+identifier = "posts"
+weight = 3
+url = "/posts/"
